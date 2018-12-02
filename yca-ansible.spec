@@ -5,7 +5,7 @@ Summary:        Test ansible
 
 License:        MIT
 URL:            https://github.com/y-cann/test-rpm
-#Source0:        
+Source0:        %{name}.tar.gz
 
 #BuildRequires:  
 #Requires:       
