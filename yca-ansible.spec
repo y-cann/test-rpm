@@ -1,5 +1,5 @@
 Name:           yca-ansible
-Version:        1.0.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        Test ansible
 
@@ -29,3 +29,6 @@ cp -r ansible %{buildroot}%{_datadir}/ansible/%{name}
 
 
 %changelog
+* Sun Dec 02 2018 y-cann <yannick.cann@safrangroup.com> 1.0.1-1
+- new package built with tito
+
