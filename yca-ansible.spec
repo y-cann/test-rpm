@@ -5,7 +5,7 @@ Summary:        Test ansible
 
 License:        MIT
 URL:            https://github.com/y-cann/test-rpm
-Source0:        %{name}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 
 #BuildRequires:  
 #Requires:       
@@ -14,22 +14,21 @@ Source0:        %{name}.tar.gz
 
 
 %prep
-%setup -q
+#%setup -q
 
 
 %build
 %configure
-make %{?_smp_mflags}
+#make %{?_smp_mflags}
 
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%make_install
-
+mkdir -p %{buildroot}%{_datadir}/ansible
+cp -r ansible %{buildroot}%{_datadir}/ansible/%{name}
 
 %files
-%doc
-
+%{_datadir}/ansible/%{name}
 
 
 %changelog
