@@ -11,15 +11,12 @@ Source0:        %{name}-%{version}.tar.gz
 #Requires:       
 
 %description
-
+YCA ansible
 
 %prep
-#%setup -q
-
+%setup -q
 
 %build
-%configure
-#make %{?_smp_mflags}
 
 
 %install
